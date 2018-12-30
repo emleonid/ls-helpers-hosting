@@ -1,11 +1,41 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>LS.Helpers.Hosting</RootNamespace>
+    <AssemblyName>LS.Helpers.Hosting</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>© Legiosoft</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <Authors>Legiosoft team</Authors>
+    <Company>Legiosoft</Company>
+    <RepositoryUrl>https://bitbucket.org/lsbusiness/helpers-hosting</RepositoryUrl>
+    <PackageProjectUrl>https://bitbucket.org/lsbusiness/helpers-hosting</PackageProjectUrl>
+    <Description>.NET Core helpers for ASP.NET hosting</Description>
+    <PackageTags>.NET core, hosting</PackageTags>
+    <PackageReleaseNotes>Testing</PackageReleaseNotes>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\LS.Helpers.Hosting.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\LS.Helpers.Hosting.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <NoWarn>1701;1702;SA1309;SA1101</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="API\" />
+    <AdditionalFiles Include="stylecop.json" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+  
 </Project>

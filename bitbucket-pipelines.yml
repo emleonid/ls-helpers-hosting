@@ -1,0 +1,26 @@
+# This is a sample build configuration for .NET Core.
+# Check our guides at https://confluence.atlassian.com/x/5Q4SMw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: microsoft/dotnet:sdk
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build and test
+          image: microsoft/dotnet:sdk
+          script: 
+            - dotnet restore
+            - dotnet build --no-restore -c release
+  tags:
+    v*:
+      - step:
+          name: Build, test and publish
+          image: microsoft/dotnet:sdk
+          script:
+            - dotnet restore
+            - dotnet build --no-restore -c release /p:Version=${BITBUCKET_TAG#v}
+            - dotnet pack --no-restore -c release /p:Version=${BITBUCKET_TAG#v}
+            - dotnet nuget push **/*.nupkg -k $NUGET_KEY

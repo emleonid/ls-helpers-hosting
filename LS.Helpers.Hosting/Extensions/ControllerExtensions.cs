@@ -23,7 +23,7 @@ namespace LS.Helpers.Hosting.Extensions
                 return controller.Ok(result);
             }
 
-            return controller.BadRequest(result.Errors);
+            return controller.BadRequest(result);
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace LS.Helpers.Hosting.Extensions
                 return controller.Ok(value ?? result);
             }
 
-            return controller.BadRequest(result.Errors);
+            return controller.BadRequest(result);
         }
     }
 }

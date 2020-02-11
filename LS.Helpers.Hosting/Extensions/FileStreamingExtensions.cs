@@ -51,7 +51,7 @@
                         };
                         // get format
                         var ext = Path.GetExtension(result.FileName);
-                        switch (ext)
+                        switch (ext.ToLower())
                         {
                             case ".xls":
                                 result.FileType = FileType.Xls;

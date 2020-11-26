@@ -18,7 +18,7 @@ pipelines:
     v*:
       - step:
           name: Build, test and publish
-          image: microsoft/dotnet:3.1-sdk
+          image: mcr.microsoft.com/dotnet/core/sdk:3.1
           script:
             - dotnet restore
             - dotnet build --no-restore -c release /p:Version=${BITBUCKET_TAG#v}

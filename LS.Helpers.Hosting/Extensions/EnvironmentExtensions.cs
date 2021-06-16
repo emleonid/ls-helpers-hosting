@@ -2,6 +2,8 @@
 
 namespace LS.Helpers.Hosting.Extensions
 {
+    using Microsoft.Extensions.Hosting;
+
     /// <summary>
     /// EnvironmentExtensions
     /// </summary>
@@ -14,7 +16,7 @@ namespace LS.Helpers.Hosting.Extensions
         /// <returns>
         ///   <c>true</c> if the specified env is testing; otherwise, <c>false</c>.
         /// </returns>
-        public static bool IsTesting(this IHostingEnvironment env)
+        public static bool IsTesting(this IWebHostEnvironment env)
         {
             return env.IsEnvironment(StandardEnvironment.Test);
         }

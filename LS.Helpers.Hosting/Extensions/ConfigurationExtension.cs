@@ -8,7 +8,7 @@ namespace LS.Helpers.Hosting.Extensions
     public static class ConfigurationExtension
     {
         /// <summary>
-        /// Mies the connection string.
+        /// My the connection string.
         /// </summary>
         /// <param name="configuration">The configuration.</param>
         /// <returns></returns>

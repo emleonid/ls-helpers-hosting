@@ -9,7 +9,7 @@ namespace LS.Helpers.Hosting.Extensions
     public static class ControllerExtensions
     {
         /// <summary>
-        /// Froms the execution result.
+        /// From the execution result.
         /// </summary>
         /// <param name="controller">The controller.</param>
         /// <param name="result">The result.</param>
@@ -27,7 +27,7 @@ namespace LS.Helpers.Hosting.Extensions
         }
 
         /// <summary>
-        /// Froms the execution result.
+        /// From the execution result.
         /// </summary>
         /// <typeparam name="T">Model</typeparam>
         /// <param name="controller">The controller.</param>

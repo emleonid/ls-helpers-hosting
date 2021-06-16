@@ -10,7 +10,7 @@ pipelines:
     master:
       - step:
           name: Build and test
-          image: mcr.microsoft.com/dotnet/core/sdk:3.1
+          image: mcr.microsoft.com/dotnet/core/sdk:5.0
           script: 
             - dotnet restore
             - dotnet build --no-restore -c release
@@ -18,7 +18,7 @@ pipelines:
     v*:
       - step:
           name: Build, test and publish
-          image: mcr.microsoft.com/dotnet/core/sdk:3.1
+          image: mcr.microsoft.com/dotnet/core/sdk:5.0
           script:
             - dotnet restore
             - dotnet build --no-restore -c release /p:Version=${BITBUCKET_TAG#v}

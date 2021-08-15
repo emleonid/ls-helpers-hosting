@@ -1,11 +1,13 @@
-﻿using LS.Helpers.Hosting.API;
-using Microsoft.AspNetCore.Mvc;
-
-namespace LS.Helpers.Hosting.Extensions
+﻿namespace LS.Helpers.Hosting.Extensions
 {
+    using JetBrains.Annotations;
+    using API;
+    using Microsoft.AspNetCore.Mvc;
+
     /// <summary>
     /// ControllerExtensions
     /// </summary>
+    [UsedImplicitly]
     public static class ControllerExtensions
     {
         /// <summary>

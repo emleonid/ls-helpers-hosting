@@ -1,5 +1,7 @@
 ﻿namespace LS.Helpers.Hosting.API
 {
+    using JetBrains.Annotations;
+
     /// <summary>
     /// ErrorInfo
     /// </summary>
@@ -8,6 +10,7 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="ErrorInfo"/> class.
         /// </summary>
+        [UsedImplicitly]
         public ErrorInfo()
             : this(string.Empty, string.Empty)
         {

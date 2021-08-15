@@ -2,8 +2,9 @@
 
 namespace LS.Helpers.Hosting.API
 {
+    using JetBrains.Annotations;
 
-      /// <summary>
+    /// <summary>
     /// Represents result of an action.
     /// </summary>
     public class ExecutionResult
@@ -31,6 +32,7 @@ namespace LS.Helpers.Hosting.API
         /// Initializes a new instance of the <see cref="ExecutionResult"/> class.
         /// </summary>
         /// <param name="message">The message.</param>
+        [UsedImplicitly]
         public ExecutionResult(InfoMessage message)
             : this(new[] { message })
         {
@@ -102,7 +104,7 @@ namespace LS.Helpers.Hosting.API
         public IList<ErrorInfo> Errors { get; }
 
         /// <summary>
-        /// Gets informmation messages
+        /// Gets information messages
         /// </summary>
         /// <value>
         /// The messages.

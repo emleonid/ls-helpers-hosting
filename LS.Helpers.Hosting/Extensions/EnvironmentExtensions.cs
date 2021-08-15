@@ -1,8 +1,7 @@
-﻿using Microsoft.AspNetCore.Hosting;
-
-namespace LS.Helpers.Hosting.Extensions
+﻿namespace LS.Helpers.Hosting.Extensions
 {
     using Microsoft.Extensions.Hosting;
+    using Microsoft.AspNetCore.Hosting;
 
     /// <summary>
     /// EnvironmentExtensions

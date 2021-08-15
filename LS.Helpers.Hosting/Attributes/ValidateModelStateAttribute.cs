@@ -1,14 +1,16 @@
-﻿using System.Linq;
-using LS.Helpers.Hosting.API;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-
-namespace LS.Helpers.Hosting.Attributes
+﻿namespace LS.Helpers.Hosting.Attributes
 {
+    using System.Linq;
+    using API;
+    using JetBrains.Annotations;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.Filters;
+
     /// <summary>
     /// ValidateModelStateAttribute
     /// </summary>
     /// <seealso cref="ActionFilterAttribute" />
+    [UsedImplicitly]
     public class ValidateModelStateAttribute : ActionFilterAttribute
     {
         /// <summary>

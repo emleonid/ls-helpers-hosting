@@ -1,5 +1,7 @@
 ﻿namespace LS.Helpers.Hosting.API
 {
+    using JetBrains.Annotations;
+
     /// <summary>
     /// InfoMessage
     /// </summary>
@@ -8,6 +10,7 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="InfoMessage"/> class.
         /// </summary>
+        [UsedImplicitly]
         public InfoMessage()
             : this(string.Empty, string.Empty)
         {

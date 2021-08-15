@@ -9,8 +9,8 @@
     /// <summary>
     /// DisableFormValueModelBinding
     /// </summary>
-    /// <seealso cref="System.Attribute" />
-    /// <seealso cref="Microsoft.AspNetCore.Mvc.Filters.IResourceFilter" />
+    /// <seealso cref="Attribute" />
+    /// <seealso cref="IResourceFilter" />
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     [UsedImplicitly]
     public class DisableFormValueModelBindingAttribute : Attribute, IResourceFilter

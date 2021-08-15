@@ -9,8 +9,8 @@
     <RepositoryType>git</RepositoryType>
     <Authors>Legiosoft team</Authors>
     <Company>Legiosoft</Company>
-    <RepositoryUrl>https://bitbucket.org/lsbusiness/helpers-hosting</RepositoryUrl>
-    <PackageProjectUrl>https://bitbucket.org/lsbusiness/helpers-hosting</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/emleonid/ls-helpers-hosting</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/emleonid/ls-helpers-hosting</PackageProjectUrl>
     <Description>.NET Core helpers for ASP.NET hosting</Description>
     <PackageTags>.NET core, hosting</PackageTags>
     <PackageReleaseNotes>Testing</PackageReleaseNotes>
@@ -33,12 +33,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2021.1.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="JetBrains.Annotations" Version="2021.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
   </ItemGroup>
   
 </Project>

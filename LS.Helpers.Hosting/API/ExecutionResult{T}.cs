@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
-
-namespace LS.Helpers.Hosting.API
+﻿namespace LS.Helpers.Hosting.API
 {
+    using System.Collections.Generic;
+    using JetBrains.Annotations;
+
     /// <summary>
     ///     Represents result of an action that returns any value
     /// </summary>
@@ -11,6 +12,7 @@ namespace LS.Helpers.Hosting.API
         /// <summary>
         /// Initializes a new instance of the <see cref="ExecutionResult{T}"/> class.
         /// </summary>
+        [UsedImplicitly]
         public ExecutionResult()
             : this((ExecutionResult)null)
         {
